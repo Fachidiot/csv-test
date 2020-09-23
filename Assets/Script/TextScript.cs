@@ -8,6 +8,8 @@ public class TextScript : MonoBehaviour
     //public CSVReader csv_reader;
     public csvReader_ver2 csv_reader;
     public bool b_Name;
+    public bool b_Clan;
+    public bool b_Level;
     public bool b_Friend;
     public bool b_Recommend;
     public Text t_Text;
@@ -37,8 +39,12 @@ public class TextScript : MonoBehaviour
             ListLoad(m_iIndex, "name");
         else if (b_Friend)
             ListLoad(m_iIndex, "friend");
-        else
+        else if (b_Recommend)
             ListLoad(m_iIndex, "recommend");
+        else if (b_Clan)
+            ListLoad(m_iIndex, "clan");
+        else
+            ListLoad(m_iIndex, "level");
     }
 
     public void IndexUp()

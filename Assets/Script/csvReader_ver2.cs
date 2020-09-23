@@ -54,15 +54,27 @@ public class csvReader_ver2 : MonoBehaviour
                 var var_Value = str_Data.Split(',');
                 var temp = new Dictionary<object, object>();
 
-                for (int i = 0; i < var_Value.Length; i++)
-                {
+                if (var_Value[0] == "")
+                    temp.Add(TempData.Name, "null");
+                else
                     temp.Add(TempData.Name, var_Value[0]);
+                if (var_Value[1] == "")
+                    temp.Add(TempData.Level, "null");
+                else
                     temp.Add(TempData.Level, var_Value[1]);
+                if (var_Value[2] == "")
+                    temp.Add(TempData.Clan, "null");
+                else
                     temp.Add(TempData.Clan, var_Value[2]);
-                    temp.Add(TempData.Friend, var_Value[3]);
-                    temp.Add(TempData.Recommend, var_Value[4]);
-                    DataList.Add(temp);
-                }
+                if (var_Value[3] == "0")
+                    temp.Add(TempData.Friend, "false");
+                else
+                    temp.Add(TempData.Friend, "true");
+                if (var_Value[4] == "0")
+                    temp.Add(TempData.Recommend, "false");
+                else
+                    temp.Add(TempData.Recommend, "true");
+                DataList.Add(temp);
             }
         }
         

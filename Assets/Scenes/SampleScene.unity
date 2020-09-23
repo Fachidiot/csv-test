@@ -286,6 +286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csv_reader: {fileID: 1125633765}
   b_Name: 0
+  b_Clan: 0
+  b_Level: 0
   b_Friend: 1
   b_Recommend: 0
   t_Text: {fileID: 177260239}
@@ -680,7 +682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchoredPosition: {x: 140, y: -150}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &423585864
@@ -697,8 +699,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csv_reader: {fileID: 1125633765}
   b_Name: 0
+  b_Clan: 1
+  b_Level: 0
   b_Friend: 0
-  b_Recommend: 1
+  b_Recommend: 0
   t_Text: {fileID: 423585865}
 --- !u!114 &423585865
 MonoBehaviour:
@@ -774,7 +778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 80}
+  m_AnchoredPosition: {x: 140, y: -80}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &703727389
@@ -808,7 +812,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Recommend
+  m_Text: Clan
 --- !u!222 &703727390
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -943,7 +947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -140, y: -150}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959563813
@@ -960,7 +964,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csv_reader: {fileID: 1125633765}
   b_Name: 0
-  b_Friend: 1
+  b_Clan: 0
+  b_Level: 1
+  b_Friend: 0
   b_Recommend: 0
   t_Text: {fileID: 959563814}
 --- !u!114 &959563814
@@ -1778,6 +1784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csv_reader: {fileID: 1125633765}
   b_Name: 1
+  b_Clan: 0
+  b_Level: 0
   b_Friend: 0
   b_Recommend: 0
   t_Text: {fileID: 1547806665}
@@ -2009,7 +2017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 80}
+  m_AnchoredPosition: {x: -140, y: -80}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1759707013
@@ -2043,7 +2051,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Firend
+  m_Text: Level
 --- !u!222 &1759707014
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2181,6 +2189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csv_reader: {fileID: 1125633765}
   b_Name: 0
+  b_Clan: 0
+  b_Level: 0
   b_Friend: 0
   b_Recommend: 1
   t_Text: {fileID: 2003702418}
