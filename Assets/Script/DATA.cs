@@ -2,33 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DATA : MonoBehaviour
+public class DATA
 {
-    public int iNumber = -1;
-    public int iClan = -1;
-    public int iAge = -1;
-    public int iLevel = -1;
-    public int iFriend = -1;
-    public int iRecommend = -1;
-
-    public string GetOrder(int index)
-    {
-        if (index == iNumber)
-            return "number";
-        else if (index == iAge)
-            return "age";
-        else if (index == iClan)
-            return "clan";
-        else if (index == iLevel)
-            return "level";
-        else if (index == iFriend)
-            return "friend";
-        else if (index == iRecommend)
-            return "recommend";
-        else
-            return "";
-    }
-
     private object m_strName;
     private object m_strClan;
     private object m_iAge;

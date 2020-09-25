@@ -28,6 +28,7 @@ public class csvReader_ver2 : MonoBehaviour
         //=========================================
         bool m_bIsEnd = false;
         bool m_bExample = true;
+        // DATA TempData = this.gameObject.AddComponent<DATA>();
         DATA TempData = new DATA();
 
         while (!m_bIsEnd)
